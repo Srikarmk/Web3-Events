@@ -1,8 +1,11 @@
+import Home from "./components/Home"
+import Nav from "./components/Nav"
 function App() {
   return (
-    <>
-      <h1 className="text-3xl p-5">Web3-Events</h1>
-    </>
+    <div className="Home h-screen ">
+    <Nav></Nav>
+      <Home></Home>
+    </div>
   )
 }
 
