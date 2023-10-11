@@ -10,7 +10,7 @@
 } */
 
 .Home {
-  background: linear-gradient(120deg, #000000, #712f07);
+  background: linear-gradient(-20deg, #1D1D1D 50%, #712f07);
   background-size: 120% 120%;
   animation: gradient-animation 3s ease-out infinite;
 }
@@ -32,6 +32,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
+
+
+@font-face {
+  font-family: "Gilroy";
+  src: url('/src/assets/Gilroy-Light.otf');
+  /* src: url('/src/assets/Gilroy-ExtraBold.otf'); */
+
+}
+
 body {
-  font-family: 'Young Serif', serif;
+  font-family: 'Gilroy', serif;
 }

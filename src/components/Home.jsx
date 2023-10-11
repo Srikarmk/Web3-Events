@@ -1,33 +1,26 @@
+import cube1 from '../assets/cubes1.png'
+import cube2 from '../assets/cubes2.png'
+import whitecmg from '../assets/cmg-white.png'
+import orngcmg from '../assets/cmg-orange.png'
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXTwitter , faTelegram,faLinkedin,faInstagram,faWhatsapp} from "@fortawesome/free-brands-svg-icons";
-import landing from '../assets/landing.png'
 const Home = () => {
   return (
-    <div className='p-10'>
-        <h2 className="flex justify-center text-white text-5xl font-bold mt-5">Coming Soon!</h2>
-        <div className="flex">
-          <div className="w-[60%]">
-        <p className='flex justify-center text-white text-3xl mt-20'>Events, Network, Community</p>
-        
-        {/* Social Links  */}
-        <div className="flex justify-center mt-20">
-        <div className="flex justify-around md:flex md:justify-between md:w-[50%] pt-10">
-              <a href="https://www.instagram.com/web3.events/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram} className="fa-3x hover:text-pink-400 text-white" /></a>
+    <div className='h-screen overflow-hidden overflow-x-hidden overflow-y-hidden'>
+      <img src={cube1} alt="" className="absolute top-[20%] left-[5%]" width={250}/>
+      <img src={cube2} alt="" className="absolute left-[80%]" width={200}/>
+      <h1 className="text-[5em] flex justify-center text-white mb-10 mt-5">Under Construction</h1>
+      <div className="justify-center flex mb-10"><p className="text-2xl text-center w-[45%] text-[#A5A8AB]">Subscribe to be the first to know about all the events and get a discount on your first order!</p></div>
+      <div className="flex justify-center space-x-10">
+        <input type="text" placeholder="Please enter your e-mail address"  className="bg-[#283036] px-5 w-[25em] text-start py-3 rounded-full text-[#A5A8AB] border-[#41464A] border-2" />
+      <button className="w-[10rem] py-2 bg-white rounded-full hover:border-4 border-slate-400 hover:opacity-99">Subscribe</button>
+      </div>
+      <div className='mt-20'>
+      <img src={orngcmg} alt="" className='absolute' width={2000}/>
+      <img src={whitecmg} alt="" className='absolute' width={2000}/>
+      </div>
 
-              <a href="https://www.linkedin.com/company/web3-events" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} className="fa-3x hover:text-blue-400 text-white" /></a>
 
-              <a href="https://t.me/+4XZe08hMAeMzMTVl" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTelegram} className="fa-3x hover:text-[#3a86ff] text-white" /></a>
-              <a href="https://twitter.com/web3_events" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faXTwitter} className="fa-3x hover:text-slate-400 text-white"/></a>
-              <a href="https://chat.whatsapp.com/CikzaZtzSwR7gnKE1hJaQQ" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} className="fa-3x hover:text-green-400 text-white"/></a>
-            </div>
-            </div>
-            </div>
-            
-            <div className="flex justify-center w-[40%] mx-auto">
-              <img src={landing} alt="landing" width={300}/>
-            </div>
-            </div>
+      
             
     </div>
   )
